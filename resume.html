@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume</title>
+    <style>
+        img{
+            width: 200px;
+        }
+        *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root{
+    --primary-color: pink;
+    --text-color: black;
+}
+html{
+   font-size: 10px;
+}
+body{
+    background-color: grey;
+    color: black;
+}
+/* styles */
+img{
+    width 100%;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+.description_box{
+    margin-top: 1rem;
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: var(--text-color);
+}
+.heading1{
+    color: var(--primary-color);
+    font-weight: 700;
+    font-size: 2rem;
+}
+.item_heading{
+    font-size: 1.4rem;
+    color: var(--text-color);
+    font-weight: 300;
+}
+.item_title{
+    font-size: 1.6rem;
+    color: black;
+    font-weight: 500;
+    margin: 0.8rem 0;
+}
+.item_subtitle{
+    font-size: 1.4rem;
+    color: var(--text-color);
+    font-weight: 400;
+}
+
+/* format */
+.header{
+    max-width: 1000px;
+    width: 90%;
+    margin: 0 auto;
+    display: grid;
+    padding: 5rem;
+    background: grey;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+}
+.profile{
+    grid-column: 1 / -1;
+    margin-bottom: 2rem;   
+}
+.group1,
+.group2,
+.group3{
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+}
+
+
+
+/* profile */
+.profile_header{
+    display: flex;
+    gap: 2rem;
+}
+.profile_ResumeImage{
+    max-width: 250px;
+
+}
+.profile_name_firstName{
+    color: black;
+    font-weight: 200;
+    font-size: clamp(2rem,8vw, 4rem);
+    display: block;
+    margin-bottom: -0.8rem;
+}
+.profile_name_lastName{
+    color: pink;
+    font-weight: 700;
+    font-size: clamp(2.5rem, 15vw, 7rem);
+    display: block:
+}
+.title{
+    font-size: 1.5rem;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+/* Expertise */
+.skillset{
+    margin-top: 1rem;
+    margin-left: 2rem;
+    line-height: 2;
+}
+/* Reference */
+.ref_item{
+    margin-top: 2rem;
+}
+.ref_name{
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+/* Education */
+.education{
+   margin-top: 2rem; 
+}
+/* Languages */
+.language_proficiency{
+    margin-top: 1rem;
+    margin-left: 2rem;
+    line-height: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    font-weight: 400;
+    font-size: 1.6rem;
+}
+/* Awards */
+.certificate_items{
+    margin-top: 2rem;
+}
+.item_title{
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+.description{
+    margin-top: 1rem;
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: var(--text-color);
+}
+/* Hobbies */
+.interests_items{
+    margin-top: 1rem;
+    margin-left: 2rem;
+    line-height: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    font-weight: 400;
+    font-size: 1.6rem;
+}
+/* Contact */
+.contact_info{
+    font-size: 1.4rem;
+    color: var(--text-color);
+    font-weight: 400;
+}
+.title{
+    color: pink;
+}
+
+
+
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="profile">
+            <div class="profile_header">
+                <div class="profile_ResumeImage">
+                    <img class="res-image"  src="./images/ResumeImage.jpg" alt="darnell simmons" />
+                </div>
+                <div>
+                    <h1 class="profile_name">
+                        <span class="profile_name_firstName">DARNELL</span>
+                        <span class="profile_name_lastName">SIMMONS</span>
+                    </h1>
+                    <p class="title">Software Developer</p>
+                    <p class="description_box">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem facere enim non quaerat sunt optio sequi labore
+                        consectetur, facilis, a magni, quibusdam ipsam quidem sed accusantium impedit molestias est commodi.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="group1">
+            <div class="skills">
+                <h3 class="heading1">EXPERTISE</h3>
+                <ul class="skillset description_box">
+                    <li>Interface Design</li>
+                    <li>JavaScript</li>
+                    <li>Python</li>
+                    <li>HTML CSS</li>
+                </ul>
+            </div>
+            <div class="ref">
+                <h3 class="heading1">REFERENCE</h3>
+                <div class="ref_item">
+                <h4 class="ref_name">Karen Williams</h4>
+                <p class="description_box">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto cumque, nihil odit possimus quaerat sit quam
+                    doloremque asperiores incidunt non delectus vero qui. Minima saepe optio eum possimus aliquam magnam.
+                </p>
+            </div>
+            <div class="ref_item">
+                <h4 class="ref_name">Karen Williams</h4>
+                <p class="description_box">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto cumque, nihil odit possimus quaerat sit quam
+                    doloremque asperiores incidunt non delectus vero qui. Minima saepe optio eum possimus aliquam magnam.
+                </p>
+                </div>
+            </div>
+            </div>
+            <div class="education">
+                <h3 class="heading1">EDUCATION</h3>
+                <div class="education_item">
+                    <p class="item_heading">2019-2023</p>
+                    <h4 class="item_title">Computer Science</h4>
+                    <p class="item_subtitle">University of Rosenburg      
+                    </p>
+                </div>
+            </div>
+        <div>
+            <div class="certifications">
+                <h3 class="heading1">LANGUAGES</h3>
+                <ul class="language_proficiency">
+                    <li>English</li>
+                    <li>Dutch</li>
+                    <li>Spanish</li>
+                    <li>French</li>
+                </ul>
+            </div>
+        </div> 
+        <div class="group2">
+            <div class="certificates">
+                <h3 class="heading1">CERTIFICATES</h3>
+                <div class="certificate_items">
+                    <p class="item_heading">2021</p>
+                    <h4 class="item_title">Univerity of Rosenburg.</h4>
+                    <p class="description">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. At autem temporibus, iste facere vitae dicta harum molestias
+                        dolores odit et repellat laborum assumenda necessitatibus facilis alias delectus accusantium quam eveniet!
+                    </p>
+                </div>
+                <div class="certificate_items">
+                    <p class="item_heading">2021</p>
+                    <h4 class="item_title">Univerity of Rosenburg.</h4>
+                    <p class="description">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. At autem temporibus, iste facere vitae dicta harum molestias
+                        dolores odit et repellat laborum assumenda necessitatibus facilis alias delectus accusantium quam eveniet!
+                    </p>
+                </div>
+            </div>
+            <div class="hobbies">
+                <h3 class="heading1">HOBBIES</h3>
+                <div class="interests_items">
+                    <ul class="interests">
+                        <li>Music</li>
+                        <li>Baking</li>
+                        <li>Tennis</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="group3">
+            <div class="contact">
+                <h3 class="title">CONTACT</h3>
+                <div class="contact_info">
+                    <p class="description">
+                        Johannesburg, South Africa.
+                    </p>
+                    <p class="description">
+                        +27 60 123 4567
+                    <p class="description">
+                        darnellsimmons456@gmail.com
+                    </p>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
